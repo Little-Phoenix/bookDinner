@@ -1,2 +1,2 @@
 # bookDinner
-公司订餐系统
+springMvc+Quartz+log4j+jquery 
