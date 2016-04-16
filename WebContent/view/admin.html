@@ -5,17 +5,17 @@
 <title>rongCloud订餐管理</title>
 <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
 <script type="text/javascript">
-function listOrderCount(){
 var addr='http://localhost:8080/bookDinner';
-var url = addr+'/order/listOrderCount';
-$(".sonTr").remove();
-$.get(url, function(result){
-        var arrayAll = [];
-        arrayAll = result['msg'];
-        for(var key in arrayAll){
-                $(".gridtable tbody").append($("<tr class='sonTr'><td>"+arrayAll[key]['foodName']+"</td><td>"+arrayAll[key]['foodCount']+"</td></tr>"));
-        }
-  });
+function listOrderCount(){
+	var url = addr+'/order/listOrderCount';
+	$(".sonTr").remove();
+	$.get(url, function(result){
+	        var arrayAll = [];
+	        arrayAll = result['msg'];
+	        for(var key in arrayAll){
+	                $(".gridtable tbody").append($("<tr class='sonTr'><td>"+arrayAll[key]['foodName']+"</td><td>"+arrayAll[key]['foodCount']+"</td></tr>"));
+	        }
+	  });
 }
 
 function deleteOne(name1){

@@ -5,8 +5,8 @@
 <title>rongCloud订餐</title>
 <script type="text/javascript" src="view/js/jquery-1.9.0.min.js"></script>
 <script type="text/javascript">
+var addr='http://localhost:8080/bookDinner';
 function loadOrderList(){
-	var addr='http://localhost:8080/bookDinner';
 	var url = addr+'/order/listOrders';
 	$(".sonTr").remove();
 	$.get(url, function(result){
@@ -16,7 +16,7 @@ function loadOrderList(){
 	                $(".gridtable tbody").append($("<tr class='sonTr'><td>"+arrayAll[key]['peopleName']+"</td><td>"+arrayAll[key]['food']+"</td><td><input type='button' onclick='deleteOne(\""+arrayAll[key]['peopleName']+"\")' class='enjoy-css' value='删除' /></td></tr>"));
 	        }
 	  });
-	}
+}
 
 
 function deleteOne(name1){
