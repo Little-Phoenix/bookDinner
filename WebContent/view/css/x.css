@@ -147,7 +147,7 @@ table.gridtable th {
 }
 
 table.gridtable th:first-child{
-        border-radius: 15px 0 0 0;
+        border-radius: 15px 0 0 0 ;
         border-top: 0;
         border-left: 0;
 }
