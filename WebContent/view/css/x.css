@@ -146,15 +146,17 @@ table.gridtable th {
         background-color: #dedede;
 }
 
+table.gridtable th{
+		border-top: 0;
+}
+
 table.gridtable th:first-child{
         border-radius: 15px 0 0 0 ;
-        border-top: 0;
         border-left: 0;
 }
 
 table.gridtable th:last-child{
         border-radius: 0 15px 0 0;
-        border-top: 0;
         border-right: 0;
 }
 
